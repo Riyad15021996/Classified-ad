@@ -44,6 +44,13 @@
     transition: all .3s;
     position: relative;
     z-index: 1;
+    @include responsive(xs) {
+        padding: 15px 15px;
+    }
+    @include responsive(vxxs) {
+        padding: 14px 15px;
+        font-size: 14px;
+    }
 }
 
 .btn--border {
