@@ -130,6 +130,32 @@ $('.feature-detail-right-slider').slick({
     centerMode: true,
     focusOnSelect: true,
     swipeToSlide: false,
+    responsive: [{
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 4,
+                arrows: true,
+            }
+        },
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                dots: true,
+                arrows: false,
+            }
+        },
+        {
+            breakpoint: 425,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                dots: true,
+                arrows: false,
+            }
+        },
+    ]
 });
 $('.feature-details-slider').slick({
     slidesToShow: 1,
